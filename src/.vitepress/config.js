@@ -5,7 +5,6 @@ export default {
   title: 'VitePress',
   titleTemplate: ':title - Custom Suffix',
   description: 'Just playing around.',
-  //srcDir: 'content',
   outDir: '../docs',
 
   locales: {

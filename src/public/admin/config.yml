@@ -16,7 +16,7 @@ local_backend: true
 collections:
   - label: "RU blog"
     name: "ru-blog"
-    folder: "docs/blog/ru"
+    folder: "src/blog/ru"
     create: true
     path: '{{year}}-{{month}}-{{day}}/{{slug}}'
     editor:

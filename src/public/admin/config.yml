@@ -16,7 +16,7 @@ local_backend: true
 collections:
   - label: "RU blog"
     name: "ru-blog"
-    folder: "src/blog/ru"
+    folder: "src/ru/blog"
     create: true
     path: '{{year}}-{{month}}-{{day}}/{{slug}}'
     editor:
@@ -34,9 +34,10 @@ collections:
         multiple: true
         create: true
         options: ["Tags", "created", "from", "config.yml"]
+
   - label: "RU pages"
     name: "ru-pages"
-    folder: "docs/pages/ru"
+    folder: "src/ru/pages"
     create: true
     # path: '{{year}}-{{month}}-{{day}}/{{slug}}'
     editor:

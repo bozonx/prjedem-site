@@ -6,6 +6,7 @@ export default {
   titleTemplate: ':title - Custom Suffix',
   description: 'Just playing around.',
   //srcDir: 'content',
+  outDir: '../../docs',
 
   locales: {
     root: {

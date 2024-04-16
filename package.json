@@ -1,15 +1,15 @@
 {
-  "name": "vuepress-decapcms-netlify",
-  "version": "1.0.0",
-  "description": "Vuepress boilerplate integrated with Decap CMS hosted on Netlify",
+  "name": "prjedem-site",
+  "version": "0.1.0",
+  "description": "Site for Project Edem",
   "type": "module",
   "main": "index.js",
-  "author": "(Stanley Ndagi <stan@md.engineer>)",
+  "author": "(Ivan Kozyrin <ipkozyrin@gmail.com>)",
   "license": "MIT",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src",
     "decap": "npx decap-server"
   },
   "devDependencies": {},

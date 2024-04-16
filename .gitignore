@@ -2,6 +2,7 @@
 .cache
 .vitepress/cache
 .vitepress/dist
+/docs
 
 
 # Logs

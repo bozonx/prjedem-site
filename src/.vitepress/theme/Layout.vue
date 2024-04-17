@@ -20,9 +20,9 @@ const { page, frontmatter } = useData()
 
 <template>
     <Layout>
-        <template #aside-outline-before>
+        <!-- <template #aside-outline-before>
                 My custom sidebar top content
-                    </template>
+                    </template> -->
                       </Layout>
 </template>
 

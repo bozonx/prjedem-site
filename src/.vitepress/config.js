@@ -9,6 +9,7 @@ export default defineConfig({
   cacheDir: '../.cache',
   metaChunk: true,
   lastUpdated: true,
+  cleanUrls: true,
   sitemap: {
     hostname: 'https://example.com'
   },
@@ -20,17 +21,12 @@ export default defineConfig({
   locales: {
     root: {
       lang: 'en-US',
-      link: '/en', 
+      link: '/en/', 
       ...en,
     },
-//    en: {
-//      label: 'English',
-//      lang: 'en', // optional, will be added  as `lang` attribute on `html` tag
-//      link: '/pages/en' // default /fr/ -- shows on navbar translations menu, can be external
-//    },
     ru: {
-      link: '/ru', 
       lang: 'ru-RU',
+      //link: '/ru/', 
       ...ru,
     },
   },
@@ -38,28 +34,10 @@ export default defineConfig({
   themeConfig: {
     i18nRouting: true,
     //logo: '/logo.svg',
-    aside: true,
+    //aside: false,
     externalLinkIcon: true,
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/bozonx/prjedem-site' },
     ],
-    editLink: {
-            pattern: 'https://github.com/vuejs/vitepress/edit/main/docs/:path',
-            text: 'Edit this page on GitHub'
-          },
-    lastUpdated: {
-            text: 'Updated at',
-            formatOptions: {
-                      dateStyle: 'full',
-                      timeStyle: 'medium'
-                    }
-          },
-    docFooter: {
-            prev: 'Pagina prior',
-            next: 'Proxima pagina'
-          },
-
-    
   }
 })

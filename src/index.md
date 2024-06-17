@@ -1,6 +1,4 @@
-
 <script setup>
-import DefaultTheme from 'vitepress/theme'
 import { useData, inBrowser } from 'vitepress'
 import { watchEffect } from 'vue'
 

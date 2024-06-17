@@ -1,32 +1,31 @@
-import { defineConfig } from 'vitepress'
-import en from './locales/en'
-import ru from './locales/ru'
-
+import { defineConfig } from "vitepress";
+import en from "./locales/en";
+import ru from "./locales/ru";
 
 export default defineConfig({
   //head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
-  outDir: '../docs',
-  cacheDir: '../.cache',
+  outDir: "../docs",
+  cacheDir: "../.cache",
   metaChunk: true,
   lastUpdated: true,
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://example.com'
+    hostname: "https://example.com",
   },
-
-  lang: 'en-US',
-  title: 'Project Edem',
-  //titleTemplate: ':title - Custom Suffix',
-  description: 'Project Edem is a anarchist community in Argentina',
+  lang: "en-US",
+  //title: "Project Edem blog",
+  //description: "Blog of the Project Edem an anarchist community in Argentina",
   locales: {
     root: {
-      lang: 'en-US',
-      link: '/en/', 
+      lang: "en-US",
+    },
+    en: {
+      lang: "en-US",
       ...en,
     },
+
     ru: {
-      lang: 'ru-RU',
-      //link: '/ru/', 
+      lang: "ru-RU",
       ...ru,
     },
   },
@@ -34,10 +33,9 @@ export default defineConfig({
   themeConfig: {
     i18nRouting: true,
     //logo: '/logo.svg',
-    //aside: false,
     externalLinkIcon: true,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/bozonx/prjedem-site' },
+      { icon: "github", link: "https://github.com/bozonx/prjedem-site" },
     ],
-  }
-})
+  },
+});

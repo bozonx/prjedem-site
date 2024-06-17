@@ -10,9 +10,9 @@
 // }
 //
 
-import DefaultTheme from 'vitepress/theme'
-import Layout from './Layout.vue'
-import './custom.css'
+import DefaultTheme from "vitepress/theme";
+import Layout from "./Layout.vue";
+//import './custom.css'
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -22,4 +22,4 @@ export default {
   //   app.component('MyGlobalComponent' /* ... */)
   // }
   Layout,
-}
+};

@@ -20,9 +20,13 @@ Use node version: 18
 
   ```bash
   yarn build
-  yarn preview
-
-  # for /admin run
-  yarn decap
   ```
 
+- Preview and admin
+
+  ```bash
+  yarn build && yarn preview
+  yarn admin
+  ```
+
+  Go to `http://localhost:4173/admin`

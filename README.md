@@ -16,17 +16,10 @@ Use node version: 18
   yarn dev
   ```
 
-- Build:
-
-  ```bash
-  yarn build
-  ```
-
-- Preview and admin
+- Build and Preview
 
   ```bash
   yarn build && yarn preview
-  yarn admin
   ```
 
   Go to `http://localhost:4173/admin`

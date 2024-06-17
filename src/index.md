@@ -2,10 +2,17 @@
 import { useData, inBrowser } from 'vitepress'
 import { watchEffect } from 'vue'
 
-const { lang } = useData()
+const { site } = useData()
+const langindexes = Object.keys(site.value.locales)
+  .filter((item) => item !== 'root')
+
 watchEffect(() => {
   if (inBrowser) {
-    window.location.replace('/' + navigator.language + '/');
+    const langToRedirect = (langindexes.includes(navigator.language))
+      ? navigator.language
+      : 'en'
+
+    window.location.replace('/' + langToRedirect + '/');
   }
 })
 </script>

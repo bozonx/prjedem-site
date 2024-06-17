@@ -1,39 +1,21 @@
 import { defineConfig } from "vitepress";
+import configBase from "./configBase.js";
 import en from "./locales/en";
 import ru from "./locales/ru";
 
 export default defineConfig({
-  //head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
-  outDir: "../docs",
-  cacheDir: "../.cache",
-  metaChunk: true,
-  lastUpdated: true,
-  cleanUrls: true,
+  ...configBase,
   sitemap: {
-    hostname: "https://example.com",
+    hostname: "https://prjedem.org",
   },
-  lang: "en-US",
-  //title: "Project Edem blog",
-  //description: "Blog of the Project Edem an anarchist community in Argentina",
   locales: {
-    root: {
-      lang: "en-US",
-    },
-    en: {
-      lang: "en-US",
-      ...en,
-    },
-
-    ru: {
-      lang: "ru-RU",
-      ...ru,
-    },
+    ...configBase.locales,
+    en: { lang: "en-US", ...en },
+    ru: { lang: "ru-RU", ...ru },
   },
 
   themeConfig: {
-    i18nRouting: true,
-    //logo: '/logo.svg',
-    externalLinkIcon: true,
+    ...configBase.themeConfig,
     socialLinks: [
       { icon: "github", link: "https://github.com/bozonx/prjedem-site" },
     ],

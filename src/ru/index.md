@@ -3,7 +3,6 @@ editLink: false
 lastUpdated: false
 prev: false
 next: false
-footer: false
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 

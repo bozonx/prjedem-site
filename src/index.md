@@ -7,7 +7,7 @@ const langindexes = Object.keys(site.value.locales)
   .filter((item) => item !== 'root')
 
 watchEffect(() => {
-  if (inBrowser) {
+  if (inBrowser && window.location.pathname === '/') {
     const langToRedirect = (langindexes.includes(navigator.language))
       ? navigator.language
       : 'en'

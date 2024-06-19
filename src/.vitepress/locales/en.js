@@ -1,49 +1,88 @@
-import commonParams from '../commonParams'
+import configBase from "../configBase.js";
+import commonParams from "../commonParams";
 
+const LANG = "en";
+const DOC = `/${LANG}/${commonParams.docUrl}/`;
 
 export default {
-  label: 'English',
+  label: "English",
+  title: "Project Eden",
+  description:
+    "The Eden Project is a network of anarchist communes built on a mixture of socialist and market economies",
   themeConfig: {
-    siteTitle: 'Project Eden',
-    returnToTopLabel: 'Return to top',
-    sidebarMenuLabel: 'Menu',
-    darkModeSwitchTitle: 'Switch to dark theme',
-    lightModeSwitchTitle: 'Switch to light theme',
-    outline: {
-      label: 'On this page',
+    sidebar: {
+      [DOC]: [
+        {
+          text: "Guide",
+          items: [
+            { text: "Introduction", link: DOC },
+            { text: "Economics", link: DOC + "economics" },
+          ],
+        },
+      ],
     },
+
+    nav: [
+      { text: "Donate", link: `/${LANG}/${commonParams.donateUrl}` },
+      { text: "Description", link: DOC },
+      { text: "Blog", link: commonParams.blogUrl },
+      { text: "Our social media", link: `/${LANG}/${commonParams.linksUrl}` },
+      { text: "About us", link: `/${LANG}/${commonParams.aboutUrl}` },
+    ],
+    siteTitle: "Project Eden",
+    returnToTopLabel: "Return to top",
+    sidebarMenuLabel: "Menu",
+    darkModeSwitchLabel: "Appearance",
+    darkModeSwitchTitle: "Switch to dark theme",
+    lightModeSwitchTitle: "Switch to light theme",
     footer: {
-      message: 'Copy is allowed only with source link',
-      copyright: 'Copyright © 2024-present Project Eden'
-    },
-    editLink: {
-       pattern: commonParams.editLinkPattern,
-       text: 'Edit this page on GitHub'
+      message: "Copying is allowed only with a link to the source",
+      copyright: "Copyright © 2024-present Project Edem",
     },
     docFooter: {
-      prev: 'Previous page',
-      next: 'Next page',
+      prev: "Previous page",
+      next: "Next page",
+    },
+    outline: {
+      label: "On this page",
+    },
+    editLink: {
+      pattern: commonParams.editLinkPattern,
+      text: "Edit this page on GitHub",
     },
     lastUpdated: {
-      text: 'Updated at',
-      ...commonParams.lastUpdated,
+      ...configBase.themeConfig.lastUpdated,
+      text: "Updated at",
     },
-    nav: [
-      { text: 'Donate', link: '/en/pages/donate' },
-      { text: 'Blog', link: commonParams.blogUrl },
-      { text: 'Our social media', link: '/en/links' },
-      { text: 'About', link: '/en/about' },
-    ],
-    sidebar: [
-      {
-        //text: 'Guide',
-        items: [
-          { text: 'Introduction', link: '/en/guide/intro' },
-          { text: 'Economics', link: '/en/guide/economics' },
-        ]
-      },
-    ],
   },
-
-
-}
+  search: {
+    options: {
+      locales: {
+        // don't forget to select while translate
+        en: {
+          translations: {
+            button: {
+              buttonText: "Search",
+              buttonAriaLabel: "Search",
+            },
+            modal: {
+              noResultsText: "No results for",
+              resetButtonTitle: "Reset search",
+              displayDetails: "Display detailed list",
+              backButtonTitle: "Close search",
+              footer: {
+                selectText: "to select",
+                selectKeyAriaLabel: "enter",
+                navigateText: "to navigate",
+                navigateUpKeyAriaLabel: "up arrow",
+                navigateDownKeyAriaLabel: "down arrow",
+                closeText: "to close",
+                closeKeyAriaLabel: "escape",
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+};

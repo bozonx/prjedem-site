@@ -6,14 +6,11 @@ export default {
   lastUpdated: true,
   cleanUrls: true,
   lang: "en-US",
-  //title: "Project Edem blog",
-  //description: "Blog of the Project Edem an anarchist community in Argentina",
   locales: {
     root: { lang: "en-US" },
   },
 
   themeConfig: {
-    i18nRouting: true,
     //logo: '/logo.svg',
     externalLinkIcon: true,
     search: {

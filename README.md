@@ -2,7 +2,7 @@
 
 ## Run
 
-Use node version: 18
+Use node version: 18 or greater
 
 - Install dependencies:
 
@@ -15,6 +15,8 @@ Use node version: 18
   ```bash
   yarn dev
   ```
+
+  Go to `http://localhost:5173/`
 
 - Build and Preview
 

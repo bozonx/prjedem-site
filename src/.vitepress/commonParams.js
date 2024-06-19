@@ -4,5 +4,5 @@ export default {
   donateUrl: "page/donate",
   aboutUrl: "page/about",
   linksUrl: "page/links",
-  docUrl: "doc/",
+  docUrl: "doc",
 };

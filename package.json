@@ -1,9 +1,8 @@
 {
   "name": "prjedem-site",
   "version": "0.4.0",
-  "description": "Site for Project Edem",
+  "description": "The main site for Project Edem",
   "type": "module",
-  "main": "index.js",
   "author": "(Ivan Kozyrin <ipkozyrin@gmail.com>)",
   "license": "MIT",
   "scripts": {
@@ -11,9 +10,7 @@
     "build": "vitepress build src",
     "preview": "vitepress preview src"
   },
-  "devDependencies": {},
   "dependencies": {
-    "vitepress": "^1.1.0",
-    "vue": "^3.4.21"
+    "vitepress": "^1.2.3"
   }
 }

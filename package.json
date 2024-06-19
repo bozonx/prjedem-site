@@ -1,6 +1,6 @@
 {
   "name": "prjedem-site",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Site for Project Edem",
   "type": "module",
   "main": "index.js",
@@ -9,8 +9,7 @@
   "scripts": {
     "dev": "vitepress dev src",
     "build": "vitepress build src",
-    "preview": "vitepress preview src",
-    "admin": "npx @staticcms/proxy-server"
+    "preview": "vitepress preview src"
   },
   "devDependencies": {},
   "dependencies": {

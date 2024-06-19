@@ -9,19 +9,19 @@ export default {
   description: "Проект Эдем это анархисткая коммуна в Аргентине",
   themeConfig: {
     sidebar: {
-      [`/${LANG}/guide/`]: [
+      [`/${LANG}/doc/`]: [
         {
           text: "Гид по проекту",
           items: [
-            { text: "Введение", link: `/${LANG}/guide/` },
-            { text: "Экономика", link: `/${LANG}/guide/economics` },
+            { text: "Введение", link: `/${LANG}/doc/` },
+            { text: "Экономика", link: `/${LANG}/doc/economics` },
           ],
         },
       ],
     },
     nav: [
       { text: "Донат", link: `/${LANG}/${commonParams.donateUrl}` },
-      { text: "Гид", link: `/${LANG}/${commonParams.guideUrl}` },
+      { text: "Описание проекта", link: `/${LANG}/${commonParams.docUrl}` },
       { text: "Блог", link: commonParams.blogUrl },
       { text: "Мы в соц сетях", link: `/${LANG}/${commonParams.linksUrl}` },
       { text: "О нас", link: `/${LANG}/${commonParams.aboutUrl}` },

@@ -24,4 +24,4 @@ Use node version: 18 or greater
   yarn build && yarn preview
   ```
 
-  Go to `http://localhost:4173/admin`
+  Go to `http://localhost:4173/`

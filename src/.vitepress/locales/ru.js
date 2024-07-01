@@ -1,15 +1,18 @@
-import configBase from "../configBase.js";
+import {
+  LANG,
+  base,
+} from "vitepress-sls-blog-tmpl/src/configs/siteLocalesBase/ru.js";
 import commonParams from "../commonParams";
 
-const LANG = "ru";
 const DOC = `/${LANG}/${commonParams.docUrl}/`;
 
 export default {
-  label: "Русский",
+  ...base,
   title: "Проект Эдем",
   description:
     "Проект Эдем это сеть анархистких комунн построенных на смесе сициалистической и рыночной экономики",
   themeConfig: {
+    ...base.themeConfig,
     sidebar: {
       [DOC]: [
         {
@@ -21,7 +24,6 @@ export default {
         },
       ],
     },
-
     nav: [
       { text: "Донат", link: `/${LANG}/${commonParams.donateUrl}` },
       { text: "Описание проекта", link: DOC },
@@ -30,59 +32,13 @@ export default {
       { text: "О нас", link: `/${LANG}/${commonParams.aboutUrl}` },
     ],
     siteTitle: "Проект Эдем",
-    returnToTopLabel: "Наверх",
-    sidebarMenuLabel: "Меню",
-    darkModeSwitchLabel: "Тема",
-    darkModeSwitchTitle: "Переключиться на тёмную тему",
-    lightModeSwitchTitle: "Переключиться на светлую тему",
     footer: {
       message: "Копирование разрешено только со ссылкой на источник",
       copyright: "Copyright © 2024-present Project Edem",
     },
-    docFooter: {
-      prev: "Предыдущая страница",
-      next: "Следующая страница",
-    },
-    outline: {
-      label: "На этой странице",
-    },
     editLink: {
       pattern: commonParams.editLinkPattern,
-      text: "Редактировать эту страницу на GitHub",
-    },
-    lastUpdated: {
-      ...configBase.themeConfig.lastUpdated,
-      text: "Последнее обновление",
-    },
-    search: {
-      options: {
-        locales: {
-          // don't forget to select while translate
-          ru: {
-            translations: {
-              button: {
-                buttonText: "Искать",
-                buttonAriaLabel: "Искать",
-              },
-              modal: {
-                noResultsText: "Ничего не найдено",
-                resetButtonTitle: "Стереть",
-                displayDetails: "Больше деталей",
-                backButtonTitle: "Закрыть поиск",
-                footer: {
-                  selectText: "Выбрать",
-                  selectKeyAriaLabel: "Кнопка ввод",
-                  navigateText: "Навигация",
-                  navigateUpKeyAriaLabel: "Стрелка вверх",
-                  navigateDownKeyAriaLabel: "Стрелка вниз",
-                  closeText: "Закрыть",
-                  closeKeyAriaLabel: "Кнопка escape",
-                },
-              },
-            },
-          },
-        },
-      },
+      ...base.themeConfig.editLink,
     },
   },
 };

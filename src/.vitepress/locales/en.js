@@ -1,15 +1,18 @@
-import configBase from "../configBase.js";
+import {
+  LANG,
+  base,
+} from "vitepress-sls-blog-tmpl/src/configs/siteLocalesBase/ru.js";
 import commonParams from "../commonParams";
 
-const LANG = "en";
 const DOC = `/${LANG}/${commonParams.docUrl}/`;
 
 export default {
-  label: "English",
+  ...base,
   title: "Project Eden",
   description:
     "The Eden Project is a network of anarchist communes built on a mixture of socialist and market economies",
   themeConfig: {
+    ...base.themeConfig,
     sidebar: {
       [DOC]: [
         {
@@ -21,7 +24,6 @@ export default {
         },
       ],
     },
-
     nav: [
       { text: "Donate", link: `/${LANG}/${commonParams.donateUrl}` },
       { text: "Description", link: DOC },
@@ -30,59 +32,13 @@ export default {
       { text: "About us", link: `/${LANG}/${commonParams.aboutUrl}` },
     ],
     siteTitle: "Project Eden",
-    returnToTopLabel: "Return to top",
-    sidebarMenuLabel: "Menu",
-    darkModeSwitchLabel: "Appearance",
-    darkModeSwitchTitle: "Switch to dark theme",
-    lightModeSwitchTitle: "Switch to light theme",
     footer: {
       message: "Copying is allowed only with a link to the source",
       copyright: "Copyright © 2024-present Project Edem",
     },
-    docFooter: {
-      prev: "Previous page",
-      next: "Next page",
-    },
-    outline: {
-      label: "On this page",
-    },
     editLink: {
       pattern: commonParams.editLinkPattern,
-      text: "Edit this page on GitHub",
-    },
-    lastUpdated: {
-      ...configBase.themeConfig.lastUpdated,
-      text: "Updated at",
-    },
-  },
-  search: {
-    options: {
-      locales: {
-        // don't forget to select while translate
-        en: {
-          translations: {
-            button: {
-              buttonText: "Search",
-              buttonAriaLabel: "Search",
-            },
-            modal: {
-              noResultsText: "No results for",
-              resetButtonTitle: "Reset search",
-              displayDetails: "Display detailed list",
-              backButtonTitle: "Close search",
-              footer: {
-                selectText: "to select",
-                selectKeyAriaLabel: "enter",
-                navigateText: "to navigate",
-                navigateUpKeyAriaLabel: "up arrow",
-                navigateDownKeyAriaLabel: "down arrow",
-                closeText: "to close",
-                closeKeyAriaLabel: "escape",
-              },
-            },
-          },
-        },
-      },
+      ...base.themeConfig.editLink,
     },
   },
 };

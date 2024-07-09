@@ -1,1 +1,6 @@
-# Economics 
+---
+title: Экономика
+description: Экономика
+---
+
+# Economics

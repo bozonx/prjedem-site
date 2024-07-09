@@ -1,9 +1,10 @@
 ---
+title: Support us
+description: Support us
+outline: false
+prev: false
 editLink: false
 lastUpdated: false
-prev: false
 next: false
 ---
-
-# Donate
-
+# Support us

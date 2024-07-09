@@ -1,0 +1,19 @@
+title: site
+body: |
+  title: "Проект Эдем"
+  siteTitle: "Проект Эдем"
+  description: "Проект Эдем это сеть анархистких комунн построенных на смесе сициалистической и рыночной экономики"
+  footer:
+    message: "Копирование разрешено только со ссылкой на источник."
+    copyright: "${PROPS.footerCopyright}"
+  nav:
+    - text: "❤️ Донат"
+      link: "/${PROPS.lang}/${PROPS.donateUrl}"
+    - text: "📖 Вики"
+      link: "${PROPS.lang}/${PROPS.docUrl}"
+    - text: "Блог"
+      link: "${PROPS.blogUrl}"
+    - text: "Мы в соц сетях"
+      link: "/${PROPS.lang}/${PROPS.linksUrl}"
+    - text: "О нас"
+      link: "/${PROPS.lang}/${PROPS.aboutUrl}"

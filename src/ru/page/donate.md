@@ -1,12 +1,10 @@
 ---
+title: Поддержать проект
+description: Способы доната
+outline: false
+prev: false
 editLink: false
 lastUpdated: false
-prev: false
 next: false
-outline: false
-description: Способы доната
 ---
-
 # Поддержать проект
-
-sfdf

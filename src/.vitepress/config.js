@@ -1,23 +1,30 @@
-import { defineConfig } from "vitepress";
 import siteConfigBase from "vitepress-sls-blog-tmpl/src/configs/siteConfigBase.js";
-import en from "./locales/en";
-import ru from "./locales/ru";
+import { loadSiteLocale } from "vitepress-sls-blog-tmpl/src/helpers/parseTranslations.js";
 
-export default defineConfig({
-  ...siteConfigBase,
-  sitemap: {
-    hostname: "https://prjedem.org",
-  },
+const PROPS = {
+  // required
+  hostname: "https://prjedem.org",
+  repo: "https://github.com/bozonx/prjedem-site",
+  editLinkPattern: "https://github.com/bozonx/prjedem-site/edit/main/src/:path",
+
+  blogUrl: "https://blog.prjedem.org",
+  footerCopyright: "Copyright © 2024-present Project Edem.",
+
+  // used in links
+  donateUrl: "page/donate",
+  aboutUrl: "page/about",
+  linksUrl: "page/links",
+  docUrl: "doc",
+};
+const ru = loadSiteLocale("ru", __filename, PROPS);
+const en = loadSiteLocale("en", __filename, PROPS);
+const configBase = siteConfigBase(PROPS, en);
+
+export default {
+  ...configBase,
   locales: {
-    ...siteConfigBase.locales,
+    ...configBase.locales,
     en: { lang: "en-US", ...en },
     ru: { lang: "ru-RU", ...ru },
   },
-
-  themeConfig: {
-    ...siteConfigBase.themeConfig,
-    socialLinks: [
-      { icon: "github", link: "https://github.com/bozonx/prjedem-site" },
-    ],
-  },
-});
+};

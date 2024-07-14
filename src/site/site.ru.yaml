@@ -1,8 +1,9 @@
 title: site
 body: |
   title: "Проект Эдем"
-  siteTitle: "Проект Эдем"
   description: "Проект Эдем это сеть анархистких комунн построенных на смесе сициалистической и рыночной экономики"
+
+  siteTitle: "Проект Эдем"
   footer:
     message: "Копирование разрешено только со ссылкой на источник."
     copyright: "${PROPS.footerCopyright}"

@@ -1,8 +1,9 @@
 title: site
 body: |
   title: "Project Edem"
-  siteTitle: "Project Edem"
   description: "The Eden Project is a network of anarchist communes built on a mixture of socialist and market economies"
+
+  siteTitle: "Project Edem"
   footer:
     message: "Copying is allowed only with a link to the source."
     copyright: "${PROPS.footerCopyright}"

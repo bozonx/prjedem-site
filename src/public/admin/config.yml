@@ -2,7 +2,7 @@ backend:
   name: github
   repo: bozonx/prjedem-site
   use_graphql: true
-  # site_domain: 5ab4c367-3592-4361-a4b8-ccd46514c967
+  # site_domain: see Netlify site id
 
 site_url: https://prjedem.org
 media_folder: src/public/media
@@ -43,9 +43,7 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-        modes: ["raw", "rich_text"]
         i18n: true
-        show_raw: true
   - name: files
     label: "Files"
     i18n: true
@@ -102,9 +100,7 @@ collections:
           - label: "Body"
             name: "body"
             widget: "markdown"
-            modes: ["raw", "rich_text"]
             i18n: true
-            show_raw: true
       - name: donate
         label: Donate
         file: "src/{{locale}}/page/donate.md"
@@ -125,9 +121,7 @@ collections:
           - label: "Body"
             name: "body"
             widget: "markdown"
-            modes: ["raw", "rich_text"]
             i18n: true
-            show_raw: true
       - name: links
         label: Links
         file: "src/{{locale}}/page/links.md"
@@ -148,9 +142,7 @@ collections:
           - label: "Body"
             name: "body"
             widget: "markdown"
-            modes: ["raw", "rich_text"]
             i18n: true
-            show_raw: true
       - name: index
         label: Index
         file: "src/{{locale}}/index.md"
@@ -160,6 +152,4 @@ collections:
           - label: "Body"
             name: "body"
             widget: "markdown"
-            modes: ["raw", "rich_text"]
             i18n: true
-            show_raw: true

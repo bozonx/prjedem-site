@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9b1c4a12-1a2f-485a-b22b-dee51ca3b54d/deploy-status)](https://app.netlify.com/sites/prjedem-site/deploys)
+
 # Project Edem site
 
 ## Run

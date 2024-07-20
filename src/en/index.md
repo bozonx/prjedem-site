@@ -1,32 +1,31 @@
 ---
-editLink: false
-lastUpdated: false
-prev: false
-next: false
 layout: page
 ---
 
 <script setup>
-import SiteHome from "vitepress-sls-blog-tmpl/src/SiteHome.vue";
+import { useData } from "vitepress";
+import SiteHome from "vitepress-sls-blog-tmpl/SiteHome.vue";
+
+const { theme, localeIndex } = useData();
 
 const hero = {
   name: "Проект Эдем",
   text: "Анархисткие коммуны",
   tagline: "Проект по созданию сети анархистких коммун сочетающие в себе как принципы социализма, так и рыночные",
   image: {
-    src: "/img/site-big-logo.webp",
+    src: theme.value.mainHeroImg,
     alt: "Project Edem logo",
   },
   actions: [
     {
       theme: "brand",
       text: "Описание проекта",
-      link: "/ru/doc/",
+      link: `/${localeIndex.value}/${theme.value.docUrl}/`,
     },
     {
       theme: "alt",
       text: "Поддержать проект",
-      link: "/ru/page/donate",
+      link: `/${localeIndex.value}/${theme.value.donateUrl}`,
     },
     {
       theme: "alt",

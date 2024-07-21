@@ -7,3 +7,5 @@ body: |
           link: ""
         - text: "Экономика"
           link: "economics"
+        - text: "О проекте"
+          link: "about"

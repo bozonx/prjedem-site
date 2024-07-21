@@ -5,5 +5,7 @@ body: |
       items:
         - text: "Introduction"
           link: ""
+        - text: "About the project"
+          link: "about"
         - text: "Economics"
           link: "economics"

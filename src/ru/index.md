@@ -5,6 +5,7 @@ layout: page
 <script setup>
 import { useData } from "vitepress";
 import SiteHome from "vitepress-sls-blog-tmpl/SiteHome.vue";
+import { PROPS } from "../.vitepress/props.js";
 
 const { theme, localeIndex } = useData();
 
@@ -14,23 +15,23 @@ const hero = {
   tagline: "Проект по созданию сети анархистких коммун сочетающие в себе как принципы социализма, так и рыночные",
   image: {
     src: theme.value.mainHeroImg,
-    alt: "Project Edem logo",
+    alt: "Логотип Проект Эдем",
   },
   actions: [
     {
       theme: "brand",
-      text: "Описание проекта",
-      link: `/${localeIndex.value}/${theme.value.docUrl}/`,
+      text: `📃 О проекте`,
+      link: `/${localeIndex.value}/doc/about`,
     },
     {
       theme: "alt",
-      text: "Поддержать проект",
-      link: `/${localeIndex.value}/${theme.value.donateUrl}`,
+      text: `🗞️ Новости, статьи, события`,
+      link: `${PROPS.blogUrl}/${localeIndex.value}/recent/1`,
     },
     {
       theme: "alt",
-      text: "Наш блог",
-      link: "https://blog.prjedem.org",
+      text: `📢 Мы в соц сетях`,
+      link: `/${localeIndex.value}/${theme.value.linksUrl}`,
     },
   ],
 }

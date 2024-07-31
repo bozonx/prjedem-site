@@ -1,6 +1,6 @@
 {
   "name": "prjedem-site",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "The main site for Project Edem",
   "type": "module",
   "author": "(Ivan Kozyrin <ipkozyrin@gmail.com>)",
@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "vitepress": "^1.3.0",
-    "vitepress-sls-blog-tmpl": "^0.10.0"
+    "vitepress-sls-blog-tmpl": "^0.11.2"
   }
 }

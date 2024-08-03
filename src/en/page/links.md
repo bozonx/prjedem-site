@@ -1,6 +1,5 @@
 ---
-title: Our links in social media
-description: Our links in social media
+description: ""
 outline: false
 prev: false
 editLink: false

@@ -1,6 +1,5 @@
 ---
-title: Наши аккаунты в соц сетях
-description: Где мы представлены в соц сетях
+description: ""
 outline: false
 prev: false
 editLink: false
